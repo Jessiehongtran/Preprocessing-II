@@ -1,1 +1,17 @@
 // Mixins in here
+
+.button (@width,@background, @color, @padding, @deco,@font, @margin, @cursor, @radius) {
+    width: @width;
+    background-color: @background;
+    color:@color;
+    padding: @padding;
+    text-decoration: @deco;
+    font-size: @font;
+    margin: @margin;
+    cursor: @cursor;
+    border-radius: @radius;
+}
+
+.btn {
+    .button(85%, @ruby-blue, @white, 15px 32px, none, 1.6rem, 4px 2px, pointer, 12px)
+  }
